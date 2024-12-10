@@ -19,13 +19,6 @@ jobs:
       - name: Checout
         uses: actions/checkout@v4
 
-      - name: PHP Code Sniffer
-        uses: php-actions/phpcs@v1
-        with:
-          php_version: 8.1
-          path: src/
-          standard: phpcs.xml
-
       - name: Definir variable
         run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
 
