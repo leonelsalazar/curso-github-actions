@@ -19,9 +19,6 @@ jobs:
       - name: Checout
         uses: actions/checkout@v4
 
-      - name: Composer install
-        uses: php-actions/composer@v6
-
       - name: PHP Code Sniffer
         uses: php-actions/phpcs@v1
         with:
